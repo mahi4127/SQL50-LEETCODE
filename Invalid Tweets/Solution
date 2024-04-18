@@ -1,0 +1,6 @@
+SELECT tweet_id
+FROM Tweets
+WHERE char_length(CONTENT)>15;
+
+
+# we will use char_length() instead of length() as later returns the length of the string measured in bytes and the former returns the length of the string measured in character
